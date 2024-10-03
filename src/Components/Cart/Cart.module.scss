@@ -1,0 +1,35 @@
+.cartModal{
+    position: fixed;
+    right: 0;
+    width: 23.5625rem;
+    height: 30.5rem;
+    z-index: 999;
+    border: 0;
+    margin-top: 8rem;
+    @media screen and (min-width:768px){        
+        margin-right: calc(10.31rem / 90rem) *100%;
+    }
+    @media screen and (max-width:767px){        
+        margin-right: auto;
+        margin-left:auto;
+        left:0;
+    }
+    >div{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        >div:first-child{
+            display: flex;
+            justify-content: space-between;
+            p{
+                cursor: pointer;
+                opacity: 0.5;
+                text-decoration-line: underline;
+                &:hover{
+                    color: #D87D4A;
+                }
+            }            
+        }
+    }
+}
